@@ -17,15 +17,17 @@ public class Comparators_Sort {
             System.out.println(s);
         }
 
-        Collections.sort(list);
-        System.out.println("After Sorting...................");
+        // Collections.sort(list);
+        // System.out.println("After Comparable Sorting...................");
 
-        for(Song s:list)
-        {
-            System.out.println(s);
-        }
+        // for(Song s:list)
+        // {
+        //     System.out.println(s);
+        // }
 
-        Collections.sort(list, new SortCompare());
+        // Collections.sort(list, new SortCompare());
+
+        Collections.sort(list , (s1,s2)-> s1.getYear() - s2.getYear());
 
         
         System.out.println("After Comparator Sorting...................");
